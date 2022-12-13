@@ -1,2 +1,24 @@
-def singleNumber(self, nums: List[int]) -> int:
-    pass
+from collections import Counter
+
+def singleNumber(nums: list) -> int:
+    
+    # numbers = {}
+    
+    # for key in nums:
+    #     try:
+    #         numbers[key] += 1
+    #     except KeyError:
+    #         numbers[key] = 1
+    
+    # for key, value in numbers.items():
+    #     if value == 1:
+    #         return key
+        
+    result = Counter(nums)
+    for i in result:
+        if result[i] == 1:
+            return i
+
+    
+    
+print(singleNumber([2,2,1]))
