@@ -8,4 +8,4 @@ def convert_question_to_camel_case(question: str):
     return new_str
 
 
-print(convert_question_to_camel_case("2490. Circular Sentence"))
+print(convert_question_to_camel_case("283. Move Zeroes"))
